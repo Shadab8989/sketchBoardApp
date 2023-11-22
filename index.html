@@ -16,18 +16,10 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#"></a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse d-flex align-items-center" id="navbarNav">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav d-flex align-items-center">
 					<li class="nav-item dropdown">
 						<a
@@ -108,6 +100,20 @@
 		</nav>
 		<canvas></canvas>
 
+		
+		<script
+			src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+			integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+			crossorigin="anonymous"
+		></script>
+		<!-- <script>let socket = io.connect("https://localhost:5000")</script> -->
+		<script>
+			const socket = io();
+		</script>
+		
+		<script src="./tools.js"></script>
+		<script src="./canvas.js"></script>
+
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -123,17 +129,5 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-		<script
-			src="https://cdn.socket.io/4.6.0/socket.io.min.js"
-			integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
-			crossorigin="anonymous"
-		></script>
-		<!-- <script>let socket = io.connect("https://localhost:5000")</script> -->
-		<script>
-			const socket = io();
-		</script>
-		
-		<script src="./tools.js"></script>
-		<script src="./canvas.js"></script>
 	</body>
 </html>
