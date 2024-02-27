@@ -11,7 +11,6 @@ eraser.addEventListener("click", (e) => {
 	canvas.style.cursor = 'url("images/eraser-cursor.png") , auto';
 });
 
-
 stickyNotes.addEventListener("click", (e) => {
 	let sticky_container = document.createElement("div");
 	sticky_container.setAttribute("class", "sticky-notes-container");

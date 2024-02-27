@@ -51,7 +51,7 @@ canvas.addEventListener("mousemove", (e) => {
 			x: e.clientX,
 			y: e.clientY,
 			width: thickness,
-			color:color
+			color: color,
 		};
 		socket.emit("drawStroke", data);
 
